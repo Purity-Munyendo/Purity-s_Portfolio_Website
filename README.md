@@ -5,8 +5,8 @@ This project showcases my professional background, skills, projects, and achieve
 
 ## 🌟 Live Preview
 
-🔗 [View Portfolio Live](https://your-live-link-here.com)  
-*(Replace with your GitHub Pages, Netlify, or Vercel link)*
+🔗 [View Portfolio Live] https://moonlit-puffpuff-859740.netlify.app/
+*( Netlify)*
 
 
 
