@@ -4,187 +4,324 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Purity Kapukha's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
 
-
-  <!-- ================= HEADER ================= -->
+  <!-- Header Section -->
   <header>
-    <img src="profile.jpeg" alt="Purity Kapukha" class="profile-pic" />
-    <h1><span class="typewriter">Purity Kapukha</span></h1>
-    <p>Software Engineer | Tech Enthusiast | IT Specialist</p>
+    <div class="header-background"></div>
+    <div class="header-content">
+      <img src="profile.jpeg" alt="Purity Kapukha" class="profile-pic" />
+      <h1 class="typewriter">Purity Kapukha</h1>
+      <p class="subtitle">Software Engineer | Tech Enthusiast | IT Specialist</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="cta-button primary">
+          <i class="fas fa-envelope"></i>
+          Get In Touch
+        </a>
+        <a href="Purity Kapukha - CV.pdf" class="cta-button secondary" download>
+          <i class="fas fa-download"></i>
+          Download CV
+        </a>
+      </div>
+    </div>
   </header>
 
-
-  <!-- ================= NAVIGATION ================= -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Work Experience</a>
-    <a href="#skills">Languages</a>
-    <a href="#interests">Interests</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#interests">Interests</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-
-  <!-- ================= ABOUT SECTION ================= -->
+  <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm passionate about tech and solving real-world problems. From software development to cybersecurity and IT support, I thrive in dynamic environments where I can create impact through code and innovation. I value teamwork, continuous learning, and using technology to empower others.
-    </p>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">
+          Passionate about technology and solving real-world problems through innovative solutions
+        </p>
+      </div>
+      <div class="content-card">
+        <div class="about-content">
+          <p>
+            I'm passionate about tech and solving real-world problems. From software development to cybersecurity and IT support, I thrive in dynamic environments where I can create impact through code and innovation. I value teamwork, continuous learning, and using technology to empower others.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <!-- ================= EDUCATION SECTION ================= -->
+  <!-- Education Section -->
   <section id="education">
-    <h2>Education</h2>
-    <p>
-      <strong>Bachelor of Science in Applied Computing</strong><br>
-      KCA University, 2020 – 2024<br>
-      Second Class Honours - Upper Division
-    </p>
-    <a href="Purity Kapukha - CV.pdf" class="button" download>Download My CV</a>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="content-card">
+        <div class="card-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3 class="card-title">Bachelor of Science in Applied Computing</h3>
+        <p class="card-meta">KCA University • 2020 – 2024</p>
+        <p class="card-description">Second Class Honours - Upper Division</p>
+        <div class="card-actions">
+          <a href="Purity Kapukha - CV.pdf" class="download-btn" download>
+            <i class="fas fa-file-pdf"></i>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <!-- ================= WORK EXPERIENCE ================= -->
+  <!-- Work Experience Section -->
   <section id="experience">
-    <h2>Work Experience</h2>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="card-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="card-title">Innovation Engineer</h3>
+          <p class="card-meta">Maurya Edu Tech • May 2025 – Present</p>
+          <p class="card-location">Nairobi, Kenya</p>
+          <p class="card-description">Teaching STEM and Robotics programs in international schools using block coding, Arduino, web development, AI basics, and hands-on learning tools.</p>
+        </div>
 
+        <div class="experience-card">
+          <div class="card-icon">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <h3 class="card-title">ICT Support Intern</h3>
+          <p class="card-meta">Aga Khan Hospital • Sep 2024 – Apr 2025</p>
+          <p class="card-location">Kisumu, Kenya</p>
+          <p class="card-description">Provided first-line tech support, configured networks, resolved system issues, and handled cybersecurity monitoring and medical tech maintenance.</p>
+        </div>
 
-    <div class="job">
-      <h3>Innovation Engineer – Maurya Edu Tech</h3>
-      <p><strong>May 2025 – Present</strong> | Nairobi, Kenya</p>
-      <p>Teaching STEM and Robotics programs in international schools using block coding, Arduino, web development, AI basics, and hands-on learning tools.</p>
-    </div>
+        <div class="experience-card">
+          <div class="card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="card-title">Frontend Intern</h3>
+          <p class="card-meta">E&M Technologies • Jan 2024 – Aug 2024</p>
+          <p class="card-location">Kiambu, Kenya</p>
+          <p class="card-description">Worked with Angular, PHP, and SQL to build full-stack apps. Participated in testing, version control, and UI development.</p>
+        </div>
 
-
-    <div class="job">
-      <h3>ICT Support Intern – Aga Khan Hospital</h3>
-      <p><strong>Sep 2024 – Apr 2025</strong> | Kisumu, Kenya</p>
-      <p>Provided first-line tech support, configured networks, resolved system issues, and handled cybersecurity monitoring and medical tech maintenance.</p>
-    </div>
-
-
-    <div class="job">
-      <h3>Frontend Intern – E&M Technologies</h3>
-      <p><strong>Jan 2024 – Aug 2024</strong> | Kiambu, Kenya</p>
-      <p>Worked with Angular, PHP, and SQL to build full-stack apps. Participated in testing, version control, and UI development.</p>
-    </div>
-
-
-    <div class="job">
-      <h3>Sales & Marketing Assistant – Safaricom</h3>
-      <p><strong>Jun 2023 – Aug 2023</strong> | Kitale, Kenya</p>
-      <p>Supported clients in registering PayBills and installing routers. Promoted Safaricom internet services both physically and online.</p>
+        <div class="experience-card">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="card-title">Sales & Marketing Assistant</h3>
+          <p class="card-meta">Safaricom • Jun 2023 – Aug 2023</p>
+          <p class="card-location">Kitale, Kenya</p>
+          <p class="card-description">Supported clients in registering PayBills and installing routers. Promoted Safaricom internet services both physically and online.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-
-  <!-- ================= PROGRAMMING LANGUAGES ================= -->
+  <!-- Skills Section -->
   <section id="skills">
-    <h2>Programming Languages & Tools</h2>
-    <ul class="grid">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>PHP</li>
-      <li>MySQL</li>
-      <li>Angular</li>
-      <li>React</li>
-      <li>Git & GitHub</li>
-    </ul>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Programming Languages & Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <div class="skill-name">HTML</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <div class="skill-name">CSS</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <div class="skill-name">JavaScript</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fab fa-php"></i></div>
+          <div class="skill-name">PHP</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-name">MySQL</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fab fa-angular"></i></div>
+          <div class="skill-name">Angular</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <div class="skill-name">React</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <div class="skill-name">Git & GitHub</div>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <!-- ================= INTERESTS SECTION ================= -->
+  <!-- Interests Section -->
   <section id="interests">
-    <h2>Interests</h2>
-    <ul class="tags">
-      <li>Web Development</li>
-      <li>Cybersecurity</li>
-      <li>STEM & Robotics</li>
-      <li>AI & Machine Learning</li>
-      <li>Travelling</li>
-      <li>Reading Novels</li>
-      <li>Research</li>
-    </ul>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Interests</h2>
+      </div>
+      <div class="interests-container">
+        <span class="interest-tag"><i class="fas fa-globe"></i> Web Development</span>
+        <span class="interest-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+        <span class="interest-tag"><i class="fas fa-robot"></i> STEM & Robotics</span>
+        <span class="interest-tag"><i class="fas fa-brain"></i> AI & Machine Learning</span>
+        <span class="interest-tag"><i class="fas fa-plane"></i> Travelling</span>
+        <span class="interest-tag"><i class="fas fa-book"></i> Reading Novels</span>
+        <span class="interest-tag"><i class="fas fa-search"></i> Research</span>
+      </div>
+    </div>
   </section>
 
-
-  <!-- ================= BADGES & ACHIEVEMENTS SECTION ================= -->
+  <!-- Achievements Section -->
   <section id="achievements">
-    <h2>Badges & Achievements</h2>
-    <ul class="badges">
-      <li>Women Techsters Bootcamp - Software Dev</li>
-      <li>📜 ALX AI Starter Kit Certificate</li>
-      <li>🧠 AMLD Africa - Machine Learning Days</li>
-      <li>🔥 Fire Safety Training - Aga Khan Hospital</li>
-      <li>🎓 KCA University - Class Rep Certificate</li>
-    </ul>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Badges & Achievements</h2>
+      </div>
+      <div class="achievements-container">
+        <div class="achievement-item">
+          <i class="fas fa-female"></i>
+          <span>Women Techsters Bootcamp - Software Dev</span>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-certificate"></i>
+          <span>ALX AI Starter Kit Certificate</span>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-brain"></i>
+          <span>AMLD Africa - Machine Learning Days</span>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-fire"></i>
+          <span>Fire Safety Training - Aga Khan Hospital</span>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-award"></i>
+          <span>KCA University - Class Rep Certificate</span>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <!-- ================= PROJECTS SECTION ================= -->
+  <!-- Projects Section -->
   <section id="projects">
-    <h2>Projects</h2>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="card-icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3 class="card-title">STEM Education Platform</h3>
+          <p class="card-description">Developed practical lessons in Scratch, Arduino, and Python for kids in international schools. Helped students build real-world tech projects.</p>
+        </div>
 
+        <div class="project-card">
+          <div class="card-icon">
+            <i class="fas fa-hospital-alt"></i>
+          </div>
+          <h3 class="card-title">Hospital IT Support System</h3>
+          <p class="card-description">Supported IT infrastructure at Aga Khan Hospital, resolved technical issues, and implemented cybersecurity measures.</p>
+        </div>
 
-    <div class="project">
-      <h3>STEM Education Platform</h3>
-      <p>Developed practical lessons in Scratch, Arduino, and Python for kids in international schools. Helped students build real-world tech projects.</p>
-    </div>
-
-
-    <div class="project">
-      <h3>Hospital IT Support System</h3>
-      <p>Supported IT infrastructure at Aga Khan Hospital, resolved technical issues, and implemented cybersecurity measures.</p>
-    </div>
-
-
-    <div class="project">
-      <h3>Angular Frontend Apps</h3>
-      <p>Worked on Angular projects at E&M Technologies to connect frontend UI with backend logic and APIs using PHP and SQL.</p>
+        <div class="project-card">
+          <div class="card-icon">
+            <i class="fab fa-angular"></i>
+          </div>
+          <h3 class="card-title">Angular Frontend Apps</h3>
+          <p class="card-description">Worked on Angular projects at E&M Technologies to connect frontend UI with backend logic and APIs using PHP and SQL.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-
-  <!-- ================= CONTACT FORM SECTION ================= -->
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Let's connect and discuss opportunities</p>
+      </div>
+      
+      <div class="contact-content">
+        <form class="contact-form">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-input" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Your Email</label>
+            <input type="email" class="form-input" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Your Message</label>
+            <textarea class="form-input form-textarea" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
 
-
-    <div class="form-container">
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <div class="social-links">
+          <a href="https://www.linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-link" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
     </div>
-
-
-    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-    <a href="https://twitter.com" target="_blank">Twitter</a>
-    <a href="https://instagram.com" target="_blank">Instagram</a>
   </section>
 
-
-  <!-- ================= FOOTER ================= -->
+  <!-- Footer -->
   <footer>
-    <div>
-      <p>&copy;2025 Purity Munyendo. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Purity Munyendo. All rights reserved.</p>
+      <p class="footer-subtitle">Built with passion and modern web technologies</p>
     </div>
   </footer>
 
-
-  <!-- ================= BACK TO TOP BUTTON ================= -->
-  <a href="#top" id="topBtn" title="Back to Top">↑</a>
-
+  <!-- Back to Top Button -->
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
 </body>
 </html>
